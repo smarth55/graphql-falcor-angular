@@ -1,11 +1,54 @@
 [
 	{
-		"id": "",
-		"firstName": "",
-		"lastName": "",
-		"username": "",
-		"email": "",
+		"id": "a6s5d4f",
+		"firstName": "Ryan",
+		"lastName": "Paulsen",
+		"username": "smarth55",
+		"email": "smarth55@gmail.com",
 		"avatar": "",
-		"friends": []
+		"friends": [
+			"qw9e8r74",
+			"a1s95df1",
+			"4a8fsd9"
+		]
+	},
+	{
+		"id": "qw9e8r74",
+		"firstName": "Mary",
+		"lastName": "Mackey-Paulsen",
+		"username": "urban8kaos",
+		"email": "urban9kaos@gmail.com",
+		"avatar": "",
+		"friends": [
+			"a6s5d4f",
+			"a1s95df1",
+			"4a8fsd9"
+		]
+	},
+	{
+		"id": "a1s95df1",
+		"firstName": "Joe",
+		"lastName": "Neukam",
+		"username": "josephneukam",
+		"email": "josephneukam@gmail.com",
+		"avatar": "",
+		"friends": [
+			"qw9e8r74",
+			"a6s5d4f",
+			"4a8fsd9"
+		]
+	},
+	{
+		"id": "4a8fsd9",
+		"firstName": "Alyssa",
+		"lastName": "McPherson",
+		"username": "ammdancer1",
+		"email": "alymcphe@indiana.edu",
+		"avatar": "",
+		"friends": [
+			"qw9e8r74",
+			"a6s5d4f",
+			"a1s95df1"
+		]
 	}
 ]

@@ -1,8 +1,54 @@
 [
 	{
-		"id": "",
-		"owner": "",
-		"content": "",
-		"comments": []
+		"id": "s9df4",
+		"owner": "a6s5d4f",
+		"content": "Hey. We are going to Upland! Who wants to join us?",
+		"comments": [
+			"vb94",
+			"ds48",
+			"m23n"
+		]
+	},
+	{
+		"id": "a6s7f",
+		"owner": "a1s95df1",
+		"content": "This is a post from Joe!",
+		"comments": [
+			"t78r"
+		]
+	},
+	{
+		"id": "s1f4g",
+		"owner": "4a8fsd9",
+		"content": "This is a post from Alyssa",
+		"comments": [
+			"j9k5"
+		]
+	},
+	{
+		"id": "jk1h5",
+		"owner": "qw9e8r74",
+		"content": "My buddy Joe is on here!",
+		"comments": [
+			"s48d"
+		]
+	},
+	{
+		"id": "8r5f2",
+		"owner": "a6s5d4f",
+		"content": "This is Ryan's first post!",
+		"comments": [
+			"sd56"
+		]
+	},
+	{
+		"id": "s5d4f",
+		"owner": "qw9e8r74",
+		"content": "This is Mary's post! Hellos everyone!",
+		"comments": [
+			"a1s2",
+			"d3f3",
+			"sdf5"
+		]
 	}
 ]
