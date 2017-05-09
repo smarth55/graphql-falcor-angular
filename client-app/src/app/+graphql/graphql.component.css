@@ -1,0 +1,9 @@
+:host() {
+	max-width: 800px;
+	display: block;
+	margin: 20px auto 0 auto;
+}
+
+md-card {
+	margin-bottom: 15px;
+}

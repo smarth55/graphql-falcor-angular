@@ -5,7 +5,7 @@
 		"lastName": "Paulsen",
 		"username": "smarth55",
 		"email": "smarth55@gmail.com",
-		"avatar": "",
+		"avatar": "/assets/images/avatars/devo.png",
 		"friends": [
 			"qw9e8r74",
 			"a1s95df1",
@@ -18,7 +18,7 @@
 		"lastName": "Mackey-Paulsen",
 		"username": "urban8kaos",
 		"email": "urban9kaos@gmail.com",
-		"avatar": "",
+		"avatar": "/assets/images/avatars/cyndi_lauper.png",
 		"friends": [
 			"a6s5d4f",
 			"a1s95df1",
@@ -31,7 +31,7 @@
 		"lastName": "Neukam",
 		"username": "josephneukam",
 		"email": "josephneukam@gmail.com",
-		"avatar": "",
+		"avatar": "/assets/images/avatars/talking_heads.png",
 		"friends": [
 			"qw9e8r74",
 			"a6s5d4f",
@@ -44,7 +44,7 @@
 		"lastName": "McPherson",
 		"username": "ammdancer1",
 		"email": "alymcphe@indiana.edu",
-		"avatar": "",
+		"avatar": "/assets/images/avatars/berlin.png",
 		"friends": [
 			"qw9e8r74",
 			"a6s5d4f",

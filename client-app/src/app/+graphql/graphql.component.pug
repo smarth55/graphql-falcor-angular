@@ -1,0 +1,12 @@
+md-card(*ngFor="let post of posts | async | select:'posts'")
+	md-card-header
+		img(md-card-avatar, src="{{ post.owner.avatar }}")
+		md-card-title
+			| {{ post.content }}
+		md-card-subtitle
+			| {{ post.owner.username }}
+	md-divider
+	md-card-content
+		md-list
+			md-list-item(*ngFor="let comment of post.comments")
+				| {{comment.owner.username}} : {{ comment.content }}
