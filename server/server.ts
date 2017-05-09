@@ -13,4 +13,4 @@ falcor.app.listen(falcorPort, ()=>{
 
 graphql.app.listen(graphqlPort, ()=>{
 	console.log(`Graphql app ready to go @ ${graphqlPort}`);
-})
+});
