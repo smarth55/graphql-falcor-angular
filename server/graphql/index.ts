@@ -4,6 +4,8 @@ import * as bodyParser from 'body-parser';
 import * as helmet from 'helmet';
 import * as cors from 'cors';
 
+import { GraphqlRouter } from './routes';
+
 export class GraphqlServer {
 	app: express.Application;
 
@@ -11,6 +13,7 @@ export class GraphqlServer {
 		this.app = express();
 
 		this.config();
+		this.createRoutes();
 	}
 
 	private config() {
@@ -19,5 +22,9 @@ export class GraphqlServer {
 		this.app.use(cors());
 		this.app.use(bodyParser.json());
 		this.app.use(bodyParser.urlencoded({extended: true}));
+	}
+
+	private createRoutes() {
+		GraphqlRouter.createRoutes(this.app);
 	}
 }
