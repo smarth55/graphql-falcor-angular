@@ -1,10 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
+import { MdSidenav } from '@angular/material';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+	selector: 'app-root',
+	templateUrl: './app.component.pug',
+	styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+	@ViewChild('sidenav') sidenav: MdSidenav;
+
+	constructor(private router: Router) {}
+
+	goTo(path: string) {
+		this.sidenav.close();
+		this.router.navigate([path]);
+	}
 }

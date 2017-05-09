@@ -1,0 +1,34 @@
+:host() {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+md-sidenav {
+	min-width: 250px;
+}
+
+md-sidenav md-list-item {
+	cursor: pointer;
+}
+
+.app-sidenav-wrapper {
+	display: flex;
+	flex: 1 1 auto;
+}
+
+md-sidenav-container {
+	width: 100%;
+}
+
+.home-link {
+	cursor: pointer;
+}
+
+.pad-right {
+	margin-right: 15px;
+}

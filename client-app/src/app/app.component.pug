@@ -1,0 +1,17 @@
+md-toolbar(color="primary")
+	button.pad-right(md-icon-button, (click)="sidenav.toggle()")
+		md-icon
+			| menu
+	span.home-link
+		| (Graphql || Falcor) && Angular
+
+.app-sidenav-wrapper
+	md-sidenav-container
+		md-sidenav(#sidenav)
+			md-list
+				md-list-item((click)="goTo('/graphql')")
+					| Qraphql
+				md-divider
+				md-list-item((click)="goTo('/falcor')")
+					| Falcor
+		router-outlet
