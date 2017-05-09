@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "lib": ["es2015", "es6", "dom"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "target": "es2015",
+    "outDir": "./build"
+  },
+  "files": [
+    "./server.ts"
+  ]
+}
