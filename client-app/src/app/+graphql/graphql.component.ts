@@ -34,6 +34,6 @@ export class GraphqlComponent implements OnInit {
 			}
 		}`;
 
-		this.posts = this.apollo.use('posts').watchQuery({query});
+		this.posts = this.apollo.watchQuery({query});
 	}
 }

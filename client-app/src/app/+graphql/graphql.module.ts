@@ -10,36 +10,16 @@ import { environment } from '../../environments/environment';
 import { graphqlRouting } from './graphql.routes';
 import { GraphqlComponent } from './graphql.component';
 
-const userClient = new ApolloClient({
+const apolloClient = new ApolloClient({
 	networkInterface: createBatchingNetworkInterface({
-		uri: `${environment.graphqlBase}/users`,
-		batchInterval: 10
-	}),
-	queryDeduplication: true
-});
-
-const postClient = new ApolloClient({
-	networkInterface: createBatchingNetworkInterface({
-		uri: `${environment.graphqlBase}/posts`,
-		batchInterval: 10
-	}),
-	queryDeduplication: true
-});
-
-const commentClient = new ApolloClient({
-	networkInterface: createBatchingNetworkInterface({
-		uri: `${environment.graphqlBase}/comments`,
+		uri: `${environment.graphqlBase}/graphql`,
 		batchInterval: 10
 	}),
 	queryDeduplication: true
 });
 
 export function provideClient() {
-	return {
-		users: userClient,
-		posts: postClient,
-		comments: commentClient
-	};
+	return apolloClient;
 }
 
 @NgModule({
