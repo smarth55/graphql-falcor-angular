@@ -5,12 +5,10 @@ import { Routes } from './routes'
 
 export class FalcorRouter {
 	static createRoutes(app: express.Application) {
-		let falcorRouter = new FalcorRouter();
-
-		falcorRouter.createRoute(app);
+		this.createRoute(app);
 	}
 
-	private createRoute(app: express.Application) {
+	private static createRoute(app: express.Application) {
 		app.use('/model', falcor.dataSourceRoute(() => new Routes()));
 	}
 }

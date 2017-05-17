@@ -8,12 +8,10 @@ import { Schema } from './schema';
 
 export class GraphqlRouter {
 	static createRoutes(app: express.Application) {
-		let graphqlRouter = new GraphqlRouter();
-
-		graphqlRouter.createRoute(app);
+		this.createRoute(app);
 	}
 
-	private createRoute(app: express.Application) {
+	private static createRoute(app: express.Application) {
 		let root = {
 			posts: ({limit}: {limit: number}, {posts}: {posts: PostsLoader}) => {
 				return posts.getPosts(limit);

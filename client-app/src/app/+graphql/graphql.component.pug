@@ -1,4 +1,4 @@
-md-card(*ngFor="let post of posts | async | select:'posts'")
+md-card(*ngFor="let post of posts")
 	md-card-header
 		img(md-card-avatar, src="{{ post.owner.avatar }}")
 		md-card-title
