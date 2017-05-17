@@ -31,6 +31,9 @@
     "@types/cors": "^2.8.1",
     "@types/denodeify": "^1.2.30",
     "@types/express": "^4.0.35",
+    "@types/falcor": "^0.1.21",
+    "@types/falcor-express": "^0.1.15",
+    "@types/falcor-router": "^0.4.16",
     "@types/helmet": "0.0.34",
     "@types/node": "^7.0.12"
   }
