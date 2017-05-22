@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http';
-
-import { environment } from '../../environments/environment';
+import { Apollo, ApolloQueryObservable } from 'apollo-angular';
+import gql from 'graphql-tag';
 
 @Component({
 	selector: 'app-graphql',
@@ -9,16 +8,16 @@ import { environment } from '../../environments/environment';
 	styleUrls: ['./graphql.component.css']
 })
 export class GraphqlComponent implements OnInit {
-	posts: any;
+	posts: ApolloQueryObservable<any>;
 
-	constructor(private http: Http) {}
+	constructor(private apollo: Apollo) {}
 
 	ngOnInit() {
 		this.getPosts();
 	}
 
 	getPosts() {
-		let query = `{
+		let query = gql`{
 			posts {
 				content
 				owner {
@@ -34,8 +33,6 @@ export class GraphqlComponent implements OnInit {
 			}
 		}`;
 
-		this.http.get(`${environment.graphqlBase}/graphql`, {params: {query}}).subscribe(data => {
-			this.posts = data.json().data.posts;
-		});
+		this.posts = this.apollo.watchQuery({query});
 	}
 }
